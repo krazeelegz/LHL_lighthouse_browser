@@ -66,10 +66,21 @@ Add the ability to store browser history (`\h`, `\f` and `\b` commands). We'd li
 * Going back again means you can go forward twice
 * Attempting to go forward when you're at the most current/recent URL is not possible (tell the user to stuff it)
 
-We might as well store the URLs visited by the user in the database. Think about the following:
+We might as well store the URLs visited by the user in the database.
+
+**Think about the following:**
 
 1. What model(s) / table(s) should you create?
 2. What should the fields/attributes be?
+
+**You'll probably want to:**
+
+* Add ActiveRecord support
+* Use SQLite3 (add the gem, establish a connection to the db)
+* Put your models in `app/models` folder
+* Add rake commands to be able to create, drop, migrate the db
+
+Hint: Refer to and perhaps even bring in files/code from your previous project to save on time.
 
 ### 5. Enhancement - Visit links _(Bonus)_
 
