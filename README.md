@@ -75,7 +75,7 @@ We might as well store the URLs visited by the user in the database. Think about
 
 Allow the user to navigate to the links that are listed after visiting a page.
 
-Given the following scenario, the user would be able to enter the command `\v 0` to visit link #1, taking them to `https://github.com/`. If they entered `\v 0` that would take them to `https://github.com/join`.
+Given the following scenario, the user would be able to enter the command `\v 1` to visit link #1, taking them to `https://github.com/`. If they entered `\v 2` that would take them to `https://github.com/join`.
 
 Think about the different types of URLs you have to deal with here:
 1. Absolute URLs (eg: `https://github.com/`)
