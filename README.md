@@ -5,6 +5,10 @@ We're going to build a command-line browser. It will allow us to fetch a web pag
 
 It will be a REPL interface and [look something like this](http://d.pr/i/eyzh/3Dt5eu0n) while running.
 
+The user will run it by simply running:
+
+    ruby run.rb
+
 We'll be using Ruby's built-in Net::HTTP library to fetch the page and then using Nokogiri to parse the HTML the page returns.
 
 A lot of the mundane REPL code is pre-written for you.
