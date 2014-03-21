@@ -1,11 +1,13 @@
 Lighthouse Browser
 ============
 
-We're going to build a command-line browser. It will allow us to fetch a web page and display some general information about that page.
+We're going to build a command-line browser. It will allow us to fetch a web page and display some general information about that page. Since it is a light version of a browser (or perhaps built at Lighthouse), we're going to call this app "Lightbrow" ... clever eh?
 
-It will look something [like this](http://d.pr/i/eyzh/3Dt5eu0n)
+It will be a REPL interface and [look something like this](http://d.pr/i/eyzh/3Dt5eu0n) while running.
 
 We'll be using Ruby's built-in Net::HTTP library to fetch the page and then using Nokogiri to parse the HTML the page returns.
+
+A lot of the mundane REPL code is pre-written for you.
 
 ## Learning Goals
 
@@ -15,6 +17,7 @@ Our primary objective is to start getting familiar with how the web works. Every
 
 ### Secondary Goals
 
+* Making HTTP requests from Ruby using Net::HTTP
 * More practice with ActiveRecord
 * Exposure to good [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns)
 
@@ -59,11 +62,10 @@ Add the ability to store browser history (`\h`, `\f` and `\b` commands). We'd li
 * Going back again means you can go forward twice
 * Attempting to go forward when you're at the most current/recent URL is not possible (tell the user to stuff it)
 
-We might as well store the URLs visited by the user in the database.
+We might as well store the URLs visited by the user in the database. Think about the following:
 
 1. What model(s) / table(s) should you create?
 2. What should the fields/attributes be?
-3. Think about how
 
 ### 5. Enhancement - Visit links _(Bonus)_
 
