@@ -60,7 +60,7 @@ What if the URL entered by the user is malformed or not a valid HTTP url? `fetch
 
 ### 4. Enhancement - History
 
-Add the ability to store browser history (`\h`, `\f` and `\b` commands). We'd like it to work similar to how a real browser handles history:
+Add the ability to store browser history (the urls that were visited). Commands: `\h`, `\f` and `\b`. We'd like it to work similar to how a real browser handles history:
 * Show history in reverse chronological order
 * Back command fetches the last visited page again
 * Going back again means you can go forward twice
