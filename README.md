@@ -38,7 +38,7 @@ Our primary objective is to start getting familiar with how the web works. Every
 
 2. What is the responsibility of the HTMLPage class?
 
-3. Why are the 2 clases inside a module?
+3. Why are the 2 classes inside a module?
 
 4. Is the Browser class code readable? What would you change/improve?
 
